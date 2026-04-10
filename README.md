@@ -1,63 +1,142 @@
-# Algorithms and Data Structures in C
+# 📗 Data Structures and Algorithms in C
 
-This repository contains implementations of various algorithms and data structures in C language. Each implementation is designed to be clear, efficient, and well-documented.
+**A complete, well-structured reference repository covering core Data Structures and Algorithms implemented in C — written with clarity, clean code, and educational value in mind.**
 
-## Algorithms
+[![Stars](https://img.shields.io/github/stars/ualiurrahat/DSA-using-C-programming?style=for-the-badge&color=f4c430&labelColor=1a1a2e)](https://github.com/ualiurrahat/DSA-using-C-programming/stargazers)
+[![Language](https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c&logoColor=white&labelColor=1a1a2e)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge&labelColor=1a1a2e)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge&labelColor=1a1a2e)](https://github.com/ualiurrahat/DSA-using-C-programming)
 
-1. **Linear Search**
+> *"C is quirky, flawed, and an enormous success."* — Dennis Ritchie
 
-   - Simple implementation of the linear search algorithm for searching elements in an array sequentially.
+**⭐ If this repository helped you understand DSA in C, please give it a star — it helps others find it too!**
 
-2. **Binary Search**
+---
 
-   - Implementation of the binary search algorithm for efficient searching in a sorted array.
+## 📖 About This Repository
 
-3. **Quick Sort**
+This repository contains clean, well-commented implementations of all fundamental **Data Structures and Algorithms** written in **C**. Every implementation is designed to be readable, self-contained, and educational — making it ideal for university students, interview preparation, and anyone building a solid systems-level programming foundation.
 
-   - Efficient sorting algorithm based on the divide-and-conquer strategy.
+C is the language closest to how computers actually work. Understanding DSA in C means understanding DSA at its deepest level — no abstractions, no hidden memory management, just raw logic and performance.
 
-4. **Selection Sort**
+---
 
-   - Simple sorting algorithm that repeatedly selects the smallest (or largest) element and puts it in its final position.
+## 🗂️ Repository Structure & Coverage
+```
+data-structures-and-algorithms-in-c/
+│
+├── 01. Searching Techniques/
+│   ├── 1_linear_search.c          ← Sequential search — O(n)
+│   └── 2_binary_search.c          ← Divide and conquer search — O(log n)
+│
+├── 02. Sorting Algorithms/
+│   ├── 1_selection_sort.c         ← O(n²) — repeated minimum selection
+│   ├── 2_bubble_sort.c            ← O(n²) — adjacent swapping
+│   ├── 3_insertion_sort.c         ← O(n²) — build sorted array one item at a time
+│   ├── 4_merge_sort.c             ← O(n log n) — divide and conquer
+│   ├── 5_quick_sort.c             ← O(n log n) avg — pivot-based partitioning
+│   └── 6_count_sort.c             ← O(n+k) — non-comparison integer sort
+│
+├── 03. Stacks & Queues/
+│   ├── 1_stack.c                  ← Push, pop, peek — LIFO structure
+│   ├── 2_balanced_parenthesis.c   ← Classic stack application
+│   ├── 3_balanced_parenthesis.c   ← Extended variant
+│   └── 4_queue.c                  ← Enqueue, dequeue — FIFO structure
+│
+├── 04. Linked List/
+│   ├── 1_linked_list.c            ← Singly linked list — insert, delete, traverse
+│   └── 2_doubly_linked_list.c     ← Doubly linked list — bidirectional traversal
+│
+├── 05. Tree Data Structure/
+│   ├── 1_treeDS.c                 ← Binary tree — construction and traversals
+│   └── 2_BST.c                    ← Binary Search Tree — insert, search, delete
+│
+├── heap.c                         ← Binary heap — heapify and heap sort
+└── priority_queue.c               ← Priority queue using binary heap
+```
+---
 
-5. **Merge Sort**
+## 📊 Topics Covered At a Glance
 
-   - Sorting algorithm that uses the divide-and-conquer approach to sort an array.
+| # | Topic | Implementations | Key Concepts |
+|---|---|---|---|
+| 01 | Searching Techniques | 2 | Linear Search, Binary Search |
+| 02 | Sorting Algorithms | 6 | Selection, Bubble, Insertion, Merge, Quick, Count Sort |
+| 03 | Stacks & Queues | 4 | LIFO, FIFO, Balanced Parenthesis |
+| 04 | Linked List | 2 | Singly LL, Doubly LL |
+| 05 | Tree Data Structure | 2 | Binary Tree Traversals, BST |
+| — | Heap | 1 | Binary Heap, Heap Sort |
+| — | Priority Queue | 1 | Heap-based Priority Queue |
 
-6. **Bubble Sort**
+**Total: 18 implementations · 7 topic areas · 100% C**
 
-   - Straightforward sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
+---
 
-7. **Insertion Sort**
-   - Sorting algorithm that builds the final sorted array one item at a time.
+## ✨ What Makes This Repository Useful?
 
-## Data Structures
+- ✅ **Pure C** — no external libraries, no shortcuts — every line is raw, systems-level code
+- ✅ **Clearly named files** — file names describe exactly what's inside, no guessing
+- ✅ **Beginner-friendly** — well-commented code explaining the logic, not just the syntax
+- ✅ **Interview-ready** — covers all the fundamental DSA topics asked in technical interviews
+- ✅ **Complexity awareness** — each algorithm implemented with an understanding of time and space trade-offs
+- ✅ **Standalone files** — every `.c` file runs independently, no dependencies between files
 
-1. **Linked List**
+---
 
-   - Implementation of a singly linked list with basic operations such as insertion, deletion, and traversal.
+## 🚀 How to Use This Repository
 
-2. **Stack**
+### Clone the Repository
 
-   - Implementation of a stack data structure with push and pop operations.
+```bash
+git clone https://github.com/ualiurrahat/DSA-using-C-programming.git
+cd DSA-using-C-programming
+```
 
-3. **Queue**
+### Compile and Run Any File
 
-   - Implementation of a queue data structure with enqueue and dequeue operations.
+```bash
+# Using GCC
+gcc filename.c -o output
+./output
+```
 
-4. **Binary Tree**
+### Recommended Learning Order
+```
+Step 1 — Searching Techniques   (understand how we find elements)
+Step 2 — Sorting Algorithms     (understand how we order elements)
+Step 3 — Linked List            (understand dynamic memory and pointers)
+Step 4 — Stacks & Queues        (understand linear access-controlled structures)
+Step 5 — Tree Data Structure    (understand hierarchical structures and BST)
+Step 6 — Heap & Priority Queue  (understand priority-based structures)
+```
+### Recommended Setup
 
-   - Construction and basic operations on a binary tree, including traversal methods.
+- **Compiler:** GCC (Linux/macOS) or MinGW (Windows)
+- **IDE:** VS Code with C/C++ Extension, or Code::Blocks
+- **Standard:** C99 or later (`gcc -std=c99 filename.c -o output`)
 
-5. **Heap**
+---
 
-   - Implementation of a binary heap data structure with heapify and heap sort.
+## 👤 About the Author
+```
+Md. Ualiur Rahman Rahat
+B.Sc. EEE — Gopalganj Science and Technology University
+B.Sc. Computer Science (in progress) — University of the People (CGPA: 3.73)
+```
 
-6. **Priority Queues**
-   - Priority queue implementation using various approaches like binary heap.
+I built this repository as part of my journey to master systems-level programming and DSA fundamentals in C — the language that sits closest to the hardware. Combined with my [Complete DSA in C++](https://github.com/ualiurrahat/complete-data-structure-and-algorithms-using-cpp) repository, this forms a comprehensive low-level programming reference I'm proud to share.
 
-## Usage
+[![GitHub](https://img.shields.io/badge/GitHub-ualiurrahat-181717?style=for-the-badge&logo=github)](https://github.com/ualiurrahat)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ualiurrahat)
 
-Each directory contains a standalone implementation of the respective algorithm or data structure. Feel free to explore the source code and use it as a reference or directly in your projects.
+---
 
-Happy Coding! 🚀
+## 📄 License
+
+This repository is licensed under the [MIT License](LICENSE) — free to use, share, and build upon with attribution.
+
+---
+
+**⭐ Found this helpful? A star takes 2 seconds and means everything — thank you!**
+
+*Written in C, the language that built the modern world.*
